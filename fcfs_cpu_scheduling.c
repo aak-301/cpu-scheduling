@@ -117,6 +117,7 @@ int main(int argc, char *argv[])
 		printf("pid \t AT \t BT \t CT \t IT \t TT \t RT");
 	for (i=0;i<t;i++)
 		printf("\n%d \t %d \t %d \t %d \t %d \t %d \t %d",p[i][0].pid,p[i][1].arrival_time,p[i][2].cpu_burst_time,p[i][3].completion_time,p[i][4].idle_time,p[i][5].turn_around_time,p[i][6].response_time);
-	printf("\n\ncpu utilization is = %f %%", cpu_utilisation);
+	printf("\n\ncpu utilization is = %f %%", cpu_utilisation*100);
+        printf("\n\n");
 	
 }
