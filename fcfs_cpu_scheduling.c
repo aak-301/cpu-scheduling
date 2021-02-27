@@ -77,8 +77,8 @@ int main(int argc, char *argv[])
 			p[i][3].completion_time = p[i][1].arrival_time + p[i][2].cpu_burst_time;		
 		}
 		
-		total_completion_time+=p[i][3].completion_time;
 	}
+                total_completion_time=p[t-1][3].completion_time;
 	
 	//4. idle time
 
